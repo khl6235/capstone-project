@@ -58,24 +58,4 @@ masked = (masked * 255).astype('uint8')                     # Convert back to 8-
 #cv2.imshow('img', masked)                                   # Display
 #cv2.waitKey()
 
-#cv2.imwrite('C:/greentea_new.png', masked)           # Save
-
-
-
-
-# split image into channels
-c_red, c_green, c_blue = cv2.split(img)
-
-# merge with mask got on one of a previous steps
-img_a = cv2.merge((c_red, c_green, c_blue, mask.astype('float32') / 255.0))
-
-# show on screen (optional in jupiter)
-#%matplotlib inline
-#plt.imshow(img_a)
-#plt.show()
-
-# save to disk
-cv2.imwrite('C:\\Test\\test_test5.png', img_a*255)
-
-# or the same using plt
-#plt.imsave('girl_2.png', img_a)
+cv2.imwrite('C:\\Test\\black_test.png', masked)           # Save
