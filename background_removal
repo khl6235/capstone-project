@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 #== Parameters =======================================================================
-BLUR = 101
+BLUR = 9
 CANNY_THRESH_1 = 10
 CANNY_THRESH_2 = 200
 MASK_DILATE_ITER = 10
